@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "2xl": "1440px",
+      },
       colors: {
         fill: {
           1: "rgba(255, 255, 255, 0.10)",

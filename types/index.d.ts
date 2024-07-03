@@ -223,7 +223,7 @@ declare interface FooterProps {
 
 declare interface RightSidebarProps {
   user: User;
-  transactions: Transaction[];
+  appwriteItemId: string;
   banks: Bank[] & Account[];
 }
 
@@ -233,7 +233,6 @@ declare interface SiderbarProps {
 
 declare interface RecentTransactionsProps {
   accounts: Account[];
-  transactions: Transaction[];
   appwriteItemId: string;
   page: number;
 }
@@ -248,7 +247,8 @@ declare interface CategoryBadgeProps {
 }
 
 declare interface TransactionTableProps {
-  transactions: Transaction[];
+  appwriteItemId: string;
+  currentPage: number;
 }
 
 declare interface CategoryProps {
